@@ -19,6 +19,7 @@
 Name:           perl-FFI-C
 Version:        0.15
 Release:        0
+%define debug_package %{nil}
 License:   Artistic-1.0 or GPL-1.0-or-later
 Summary:        C data types for FFI
 Url:            https://metacpan.org/release/%{cpan_name}
@@ -45,7 +46,7 @@ Requires:       perl(Ref::Util)
 Requires:       perl(Sub::Identify) >= 0.05
 Requires:       perl(Sub::Install)
 Requires:       perl(Sub::Util)
-%{perl_requires}
+%{?perl_requires}
 
 %description
 This distribution provides tools for building classes to interface for
