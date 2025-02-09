@@ -1,6 +1,6 @@
 <services>
   <service name="cpanspec" mode="manual">
     <param name="source">FFI::C</param>
-    <param name="add-requires">libarchive-devel</param>
+    <!--param name="add-requires">libarchive-devel</param-->
   </service>
 </services>
