@@ -12,7 +12,10 @@
 #  bar.patch:
 #  baz.patch: PATCH-FIX-OPENSUSE
 preamble: |-
- BuildArch:  noarch
+ BuildArch:  noarch 
+ BuildRequires: make
+ BuildRequires: gcc
+ BuildRequires: gcc-c++
 #post_prep: |-
 # hunspell=`pkg-config --libs hunspell | sed -e 's,-l,,; s,  *,,g'`
 # sed -i -e "s,hunspell-X,$hunspell," t/00-prereq.t Makefile.PL 
